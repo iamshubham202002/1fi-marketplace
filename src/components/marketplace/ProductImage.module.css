@@ -1,0 +1,14 @@
+.wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-height: 260px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.initial {
+  font-size: 56px;
+  font-weight: 800;
+}

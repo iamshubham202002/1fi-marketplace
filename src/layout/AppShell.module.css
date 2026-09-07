@@ -1,0 +1,36 @@
+.viewport {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: #EDEBF5;
+}
+
+.frame {
+  width: 100%;
+  max-width: var(--app-max-width);
+  min-height: 100vh;
+  background: var(--color-bg);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 60px rgba(23, 20, 38, 0.08);
+}
+
+.content {
+  flex: 1;
+  padding-bottom: calc(var(--nav-height) + 12px);
+  overflow-x: hidden;
+}
+
+/* On real desktop/tablet widths, stop pretending to be a phone glued to
+   the edges and give the frame room to breathe like a card on a page. */
+@media (min-width: 640px) {
+  .viewport {
+    padding: 32px 16px;
+  }
+  .frame {
+    min-height: calc(100vh - 64px);
+    border-radius: 28px;
+    overflow: hidden;
+  }
+}

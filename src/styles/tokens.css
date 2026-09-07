@@ -1,0 +1,81 @@
+:root {
+  /* --- 1Fi brand palette (sampled from reference UI) --- */
+  --color-primary: #7C3AED;
+  --color-primary-600: #6D28D9;
+  --color-primary-700: #5B21B6;
+  --color-primary-50: #F3EEFF;
+  --color-primary-100: #EDE7FE;
+
+  --gradient-banner: linear-gradient(135deg, #2A1A5E 0%, #5B21B6 45%, #9333EA 85%, #C026D3 100%);
+
+  --color-bg: #F8F8FB;
+  --color-surface: #FFFFFF;
+  --color-border: #ECEBF3;
+  --color-border-strong: #E1DEF0;
+
+  --color-text-primary: #171426;
+  --color-text-secondary: #6E6B80;
+  --color-text-muted: #9997A8;
+  --color-text-on-primary: #FFFFFF;
+
+  --color-success: #16A34A;
+  --color-success-bg: #EAFBF1;
+  --color-danger: #DC2626;
+  --color-danger-bg: #FDECEC;
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 1px 2px rgba(23, 20, 38, 0.04), 0 6px 20px rgba(23, 20, 38, 0.06);
+  --shadow-card-hover: 0 2px 4px rgba(23, 20, 38, 0.06), 0 10px 28px rgba(23, 20, 38, 0.1);
+  --shadow-nav: 0 -2px 16px rgba(23, 20, 38, 0.06);
+
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  --app-max-width: 480px;
+  --nav-height: 68px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

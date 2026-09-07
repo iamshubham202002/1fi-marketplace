@@ -1,0 +1,25 @@
+.tile {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 6px;
+}
+
+.roundedMd {
+  border-radius: var(--radius-sm);
+}
+
+.roundedSm {
+  border-radius: 8px;
+}
+
+.text {
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-align: center;
+  line-height: 1.1;
+  text-transform: uppercase;
+  word-break: break-word;
+}

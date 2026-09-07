@@ -1,0 +1,47 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  padding: 12px 16px;
+  box-shadow: var(--shadow-card);
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: var(--color-text-primary);
+  min-width: 0;
+}
+
+.input::placeholder {
+  color: var(--color-text-muted);
+}
+
+/* Remove native search input decorations for a consistent look */
+.input::-webkit-search-decoration,
+.input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.clearButton {
+  border: none;
+  background: var(--color-primary-50);
+  color: var(--color-primary);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  font-size: 15px;
+  line-height: 1;
+  cursor: pointer;
+  flex-shrink: 0;
+}

@@ -1,0 +1,51 @@
+.banner {
+  position: relative;
+  background: var(--gradient-banner);
+  padding: 22px 20px 44px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  overflow: hidden;
+}
+
+.banner::after {
+  content: '';
+  position: absolute;
+  right: -40px;
+  top: -60px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.backButton {
+  border: none;
+  background: rgba(255, 255, 255, 0.14);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.textBlock {
+  z-index: 1;
+}
+
+.title {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 4px 0 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
+}

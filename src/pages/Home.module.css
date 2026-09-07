@@ -1,0 +1,49 @@
+.wrap {
+  padding: 28px 16px;
+}
+
+.greeting {
+  margin: 0 0 6px;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.subtext {
+  margin: 0 0 24px;
+  font-size: 13.5px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.promo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--gradient-banner);
+  border-radius: var(--radius-lg);
+  padding: 18px 20px;
+  box-shadow: var(--shadow-card);
+}
+
+.promoText {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.promoTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.promoSubtitle {
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.promoArrow {
+  flex-shrink: 0;
+}

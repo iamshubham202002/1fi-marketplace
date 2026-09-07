@@ -1,0 +1,91 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  text-align: left;
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  cursor: pointer;
+}
+
+.cardSelected {
+  border-color: var(--color-primary);
+  background: var(--color-primary-50);
+}
+
+.radio {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--color-border-strong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardSelected .radio {
+  border-color: var(--color-primary);
+}
+
+.radioDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
+.details {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.tenure {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.noCostBadge {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-success);
+  background: var(--color-success-bg);
+  padding: 3px 8px;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}
+
+.interestBadge {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  background: var(--color-bg);
+  padding: 3px 8px;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}
+
+.monthly {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-primary-700);
+}
+
+.meta {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
